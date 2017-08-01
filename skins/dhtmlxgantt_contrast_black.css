@@ -7,26 +7,32 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 (c) Dinamenta, UAB.
 */
 .buttonBg {
-	background: #ffffff;
+	background: #000000;
 }
 /* colors for items with inline styles assigned (task.color, link.color)*/
 .gridHoverStyle {
-	background-color: #fff3a1;
+	background-color: #42425e;
 }
 .gridSelection {
-	background-color: #fff3a1;
+	background-color: #42425e;
 }
 .timelineSelection {
-	background-color: #fff3a1;
+	background-color: #42425e;
+}
+.header_text_style {
+	text-transform: uppercase;
+	font-weight: bold;
 }
 .gantt_grid_scale .gantt_grid_head_cell {
-	color: #a6a6a6;
+	color: #c1c1c1;
+	text-transform: uppercase;
+	font-weight: bold;
 	border-top: none !important;
 	border-right: none !important;
 }
 .gantt_grid_data .gantt_cell {
 	border-right: none;
-	color: #454545;
+	color: #ffffff;
 }
 /*
 	Tasks
@@ -53,29 +59,31 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	width: 16px;
 }
 .chartHeaderBg {
-	background-color: #fff;
+	background-color: #000000;
 }
 .gantt_task .gantt_task_scale .gantt_scale_cell {
-	color: #a6a6a6;
-	border-right: 1px solid #ebebeb;
+	color: #c1c1c1;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-right: 1px solid #7e7e7e;
 }
 /*
 	project highlight
 */
 .gantt_row.gantt_project,
 .gantt_row.odd.gantt_project {
-	background-color: #edffef;
+	background-color: #edffee;
 }
 .gantt_task_row.gantt_project,
 .gantt_task_row.odd.gantt_project {
-	background-color: #f5fff6;
+	background-color: #f5fff5;
 }
 .gantt_task_line.gantt_project {
-	background-color: #65c16f;
-	border: 1px solid #3c9445;
+	background-color: #006803;
+	border: 1px solid #006803;
 }
 .gantt_task_line.gantt_project .gantt_task_progress {
-	background-color: #46ad51;
+	background-color: #003b01;
 }
 /*
 	milestone
@@ -83,27 +91,59 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 /*
 	lightbox
 */
+.modalBorder {
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	-moz-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	box-shadow: inset 0px 0px 0px 4px #0505ff;
+	padding: 4px;
+}
+.gantt_popup_shadow {
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	-moz-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	box-shadow: inset 0px 0px 0px 4px #0505ff;
+	padding: 4px;
+}
 .buttonBg {
-	background: #fff;
+	background: #000000;
+}
+.gantt_cal_larea input,
+.gantt_cal_larea select,
+.gantt_cal_larea textarea {
+	background: #000000;
+	color: #ffffff;
+}
+.gantt_cal_larea .gantt_section_time {
+	background: #000000;
+}
+.gantt_cal_larea .gantt_cal_lsection {
+	color: #c1c1c1;
+	font-size: 14px;
 }
 .gantt_cal_light .gantt_btn_set {
 	margin: 5px 10px;
 }
 .gantt_btn_set.gantt_cancel_btn_set {
-	background: #fff;
-	color: #454545;
-	border: 1px solid #cecece;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffffff;
+	background: #000000;
+	color: #ffffff;
 }
 .gantt_btn_set.gantt_save_btn_set {
-	background: #3db9d3;
-	text-shadow: 0 -1px 0 #248a9f;
-	color: #fff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #76ff03;
+	background: #000000;
+	color: #76ff03;
 }
 .gantt_btn_set.gantt_delete_btn_set {
-	text-shadow: 0 -1px 0 #6f6f6f;
-	background: #ec8e00;
-	text-shadow: 0 -1px 0 #aa6600;
-	color: #fff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffc400;
+	background: #000000;
+	color: #ffc400;
 }
 .gantt_delete_btn {
 	margin-top: 2px;
@@ -121,54 +161,65 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	Message
 */
 .gantt_popup_button.gantt_ok_button {
-	background: #3db9d3;
-	text-shadow: 0 -1px 0 #248a9f;
-	color: #fff;
 	font-weight: bold;
-	border-width: 0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #76ff03;
+	background: #000000;
+	color: #76ff03;
 }
 .gantt_popup_button.gantt_cancel_button {
 	font-weight: bold;
 	color: #454544;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffffff;
+	background: #000000;
+	color: #ffffff;
 }
 .gantt_popup_title {
-	background-color: #fff;
-}
-.gantt_popup_shadow {
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
+	color: #ffffff;
 }
 /*
 	Quick info
 */
+.gantt_qi_big_icon {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffffff;
+	background: #000000;
+	color: #ffffff;
+}
 .gantt_qi_big_icon.icon_edit {
-	color: #454545;
-	background: #fff;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffffff;
+	background: #000000;
+	color: #ffffff;
 }
 .gantt_qi_big_icon.icon_delete {
-	text-shadow: 0 -1px 0 #aa6600;
-	background: #ec8e00;
-	color: #fff;
-	border-width: 0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #ffc400;
+	background: #000000;
+	color: #ffc400;
 }
 /*links dnd*/
 .gantt_tooltip {
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
-	background-color: white;
-	border-left: 1px solid rgba(0, 0, 0, 0.07);
-	border-top: 1px solid rgba(0, 0, 0, 0.07);
-	font-family: "Arial";
-	font-size: 8pt;
-	color: #454545;
+	font-size: 14px;
+	color: #ffffff;
+	background: #000000;
+	border: 1px solid #ffff00;
 }
 .gantt_container {
-	font-family: "Arial";
-	font-size: 13px;
-	border: 1px solid #cecece;
+	font-family: "arial";
+	font-size: 14px;
+	border: 1px solid #ffff00;
 	position: relative;
 	white-space: nowrap;
 }
 .gantt_grid {
-	border-right: 1px solid #cecece;
+	border-right: 1px solid #ffff00;
 }
 .gantt_task_scroll {
 	overflow-x: scroll;
@@ -185,20 +236,20 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 }
 .gantt_grid_scale,
 .gantt_task_scale {
-	color: #6b6b6b;
-	font-size: 12px;
-	border-bottom: 1px solid #cecece;
+	color: #ffffff;
+	font-size: 14px;
+	border-bottom: 1px solid #ffff00;
 }
 .gantt_grid_scale {
-	background-color: #fff;
+	background-color: #000000;
 }
 .gantt_task_scale {
-	background-color: #fff;
+	background-color: #000000;
 }
 .gantt_scale_line {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	border-top: 1px solid #cecece;
+	border-top: 1px solid #ffff00;
 }
 .gantt_scale_line:first-child {
 	border-top: none;
@@ -206,7 +257,7 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 .gantt_grid_head_cell {
 	display: inline-block;
 	vertical-align: top;
-	border-right: 1px solid #cecece;
+	border-right: 1px solid #ffff00;
 	text-align: center;
 	position: relative;
 	cursor: default;
@@ -236,7 +287,7 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 .gantt_grid_head_add {
 	width: 100%;
 	height: 100%;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTQ3MjMyMENDNkI0MTFFMjk4MTI5QTg3MDhFNDVDQTkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTQ3MjMyMERDNkI0MTFFMjk4MTI5QTg3MDhFNDVDQTkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1NDcyMzIwQUM2QjQxMUUyOTgxMjlBODcwOEU0NUNBOSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1NDcyMzIwQkM2QjQxMUUyOTgxMjlBODcwOEU0NUNBOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PshZT8UAAABbSURBVHjaYrTdeZmBEsCER+4wEP+H4sPkGGCDg020ARR7gb4GIAcYDKMDdPnDyAbYkGG5DVW9cIQMvUdBBAuUY4vDz8iAcZinA2zgCHqAYQMseAywJcYFAAEGAM+UFGuohFczAAAAAElFTkSuQmCC);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTk4MTk1QzM2ODc4MTFFNkFCNkFDOUZDNzZFNjgxRkIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTk4MTk1QzQ2ODc4MTFFNkFCNkFDOUZDNzZFNjgxRkIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpFOTgxOTVDMTY4NzgxMUU2QUI2QUM5RkM3NkU2ODFGQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpFOTgxOTVDMjY4NzgxMUU2QUI2QUM5RkM3NkU2ODFGQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Psrbi8sAAABYSURBVHjaYiz7z8xACWDCI/cBiP9D8QdyDODHwSbaAIq9QF8DkAMMhtEBuvwHZAP4ybCcn6pe+EiGXrAeFihHAIefkQHjME8HOAOJUCCz4DFAgBgXAAQYACAZFHJhx3hLAAAAAElFTkSuQmCC);
 	background-position: center center;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -255,7 +306,7 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 }
 .gantt_grid_data .gantt_row:hover,
 .gantt_grid_data .gantt_row.odd:hover {
-	background-color: #fff3a1;
+	background-color: #42425e;
 }
 .gantt_grid_data .gantt_row:hover .gantt_add,
 .gantt_grid_data .gantt_row.odd:hover .gantt_add {
@@ -264,15 +315,15 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 }
 .gantt_task_row,
 .gantt_row {
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #7e7e7e;
 }
 .gantt_row,
 .gantt_task_row {
-	background-color: #ffffff;
+	background-color: #000000;
 }
 .gantt_row.odd,
 .gantt_task_row.odd {
-	background-color: #ffffff;
+	background-color: #000000;
 }
 .gantt_row,
 .gantt_cell,
@@ -294,7 +345,7 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	margin-left: -7px;
 }
 .gantt_grid_column_resize_wrap .gantt_grid_column_resize {
-	background-color: #cecece;
+	background-color: #ffff00;
 	height: 100%;
 	width: 1px;
 	margin: 0 auto;
@@ -307,14 +358,14 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	z-index: 1;
 }
 .gantt_grid_resize_wrap .gantt_grid_resize {
-	background-color: #cecece;
+	background-color: #ffff00;
 	width: 1px;
 	margin: 0 auto;
 }
 .gantt_drag_marker.gantt_grid_resize_area {
 	background-color: rgba(231, 231, 231, 0.5);
-	border-left: 1px solid #cecece;
-	border-right: 1px solid #cecece;
+	border-left: 1px solid #ffff00;
+	border-right: 1px solid #ffff00;
 	height: 100%;
 	width: 100%;
 	-moz-box-sizing: border-box;
@@ -324,13 +375,13 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 .gantt_cell {
 	display: inline-block;
 	vertical-align: top;
-	border-right: 1px solid #ebebeb;
+	border-right: 1px solid #7e7e7e;
 	padding-left: 6px;
 	padding-right: 6px;
 	height: 100%;
 	overflow: hidden;
 	white-space: nowrap;
-	font-size: 13px;
+	font-size: 14px;
 }
 .gantt_grid_scale .gantt_last_cell,
 .gantt_grid_data .gantt_last_cell,
@@ -345,14 +396,14 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	display: inline-block;
 	white-space: nowrap;
 	overflow: hidden;
-	border-right: 1px solid #cecece;
+	border-right: 1px solid #ffff00;
 	text-align: center;
 	height: 100%;
 }
 .gantt_task_cell {
 	display: inline-block;
 	height: 100%;
-	border-right: 1px solid #ebebeb;
+	border-right: 1px solid #7e7e7e;
 }
 .gantt_ver_scroll {
 	width: 0px;
@@ -402,12 +453,12 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	display: inline-block;
 }
 .gantt_tree_icon.gantt_open {
-	background-image: url(data:image/gif;base64,R0lGODlhEgASALMJAMrKyt3d3ejp6d7f3+/v75aWlvf39////wAAAP///wAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6M0I5RTczQjVDMDdBMTFFMTgxRjc4Mzk4M0Q3MjVFQzAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6M0I5RTczQjZDMDdBMTFFMTgxRjc4Mzk4M0Q3MjVFQzAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozQjlFNzNCM0MwN0ExMUUxODFGNzgzOTgzRDcyNUVDMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozQjlFNzNCNEMwN0ExMUUxODFGNzgzOTgzRDcyNUVDMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAkALAAAAAASABIAAARJMMlJq704661B+SAIXAVhnKhBFKSZnmuLImhslXPN3ibi+6pdBXc4IIpB2YkGE1IKAoL0ICUInJNCYMDtDgJYiScUGnHO6LQkAgA7);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QjRFQzM4RjY2ODc3MTFFNjlGNUVCQUVCQzgyNkQ5RUUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QjRFQzM4Rjc2ODc3MTFFNjlGNUVCQUVCQzgyNkQ5RUUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNEVDMzhGNDY4NzcxMUU2OUY1RUJBRUJDODI2RDlFRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCNEVDMzhGNTY4NzcxMUU2OUY1RUJBRUJDODI2RDlFRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpdfxE8AAABySURBVHjaYjx48CADucDOzo6BiYFCwILE/k+iXkZ0A+CCRAC4ZXi9sNXO6T8IE+sFkAZcBqHwvQ/tYyDKBaQGIr7A/I8rnGjiAkYsNjMSZQBy4CAHHro4zb2A7CJGUg34T4kLGMnxAuP///8pCgOAAAMAxcMbX5R+AnUAAAAASUVORK5CYII=);
 	width: 18px;
 	cursor: pointer;
 }
 .gantt_tree_icon.gantt_close {
-	background-image: url(data:image/gif;base64,R0lGODlhEgASALMJAMrKyt3d3ejp6d7f3+/v75aWlvf39wAAAP///////wAAAAAAAAAAAAAAAAAAAAAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzY0QzNGM0VDMDdBMTFFMUE3MDlCNUM2QjU1NDA5RjgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzY0QzNGM0ZDMDdBMTFFMUE3MDlCNUM2QjU1NDA5RjgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNjRDM0YzQ0MwN0ExMUUxQTcwOUI1QzZCNTU0MDlGOCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozNjRDM0YzREMwN0ExMUUxQTcwOUI1QzZCNTU0MDlGOCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAkALAAAAAASABIAAARDMMlJq704661B+SAIXAVhnKhBFKSZnmv7wqxVzmpd3Uff5zKEUAi0uV4xm4DAbBIEOkohMKhaB4HoxBMKjTjgsFgSAQA7);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Qjg3ODU2QTg2ODc3MTFFNkE4MDlDMDMyQkRGNDgyQTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Qjg3ODU2QTk2ODc3MTFFNkE4MDlDMDMyQkRGNDgyQTAiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCODc4NTZBNjY4NzcxMUU2QTgwOUMwMzJCREY0ODJBMCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpCODc4NTZBNzY4NzcxMUU2QTgwOUMwMzJCREY0ODJBMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqbUJTYAAABdSURBVHjaYjx48CADucDOzo6BiYFCwILE/k+iXkZ0A+CCRAC4ZVT1AsNWOyeiNHkf2sdAGxcQGZgo4UQTFzCSbQBy4BALKPYC1cPgPyUGMJLjAsb///9T5AWAAAMAJ4wO9WM7P60AAAAASUVORK5CYII=);
 	width: 18px;
 	cursor: pointer;
 }
@@ -415,13 +466,13 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	width: 18px;
 }
 .gantt_tree_icon.gantt_folder_open {
-	background-image: url(data:image/gif;base64,R0lGODlhEgASAJECAJeXl7Gvrf///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTdDRDM3QzVDMDZEMTFFMUJGMzhFMDhCN0RGRjBGQ0YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTdDRDM3QzZDMDZEMTFFMUJGMzhFMDhCN0RGRjBGQ0YiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1N0NEMzdDM0MwNkQxMUUxQkYzOEUwOEI3REZGMEZDRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMzdDNEMwNkQxMUUxQkYzOEUwOEI3REZGMEZDRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAIALAAAAAASABIAAAIzlI+pywcPm3mhWgkCsjBOvVkimElG9ZlCBlXd+2XjjLKg5GqoeZXqvsOQXK/ijUZTKVUFADs=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkM2MUMyMzQ2ODc3MTFFNjhFMjE5QzYzREY2ODEzREUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkM2MUMyMzU2ODc3MTFFNjhFMjE5QzYzREY2ODEzREUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGQzYxQzIzMjY4NzcxMUU2OEUyMTlDNjNERjY4MTNERSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGQzYxQzIzMzY4NzcxMUU2OEUyMTlDNjNERjY4MTNERSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PlC39FYAAADWSURBVHjaYty4fi0DNQATA5UAskGeQPwMiP9jwfWkGDQXiCVxqGsgZBiyQTBDGNFwI5Jh2FwL8oUnMWHUgGQYNgBywFxiA7sBi0thGGwYVWOtFYi/IIn9JxI7oBtUBMTcZDiiHt2gE1B2C55wQMZiQPwZ6iIHZINgMZIKxFxEuOQ1EE9GdxXIoANQLA7E2UR6qweIP6K7iAHJVaVAzEuEQe+BeBqyAAuUBrloBxB7APEnMgL+BXI6ygfiR2QY8hSIk1mQBG4BsTy5CZLx////VEnZAAEGAO3yNxaCOyWPAAAAAElFTkSuQmCC);
 }
 .gantt_tree_icon.gantt_folder_closed {
-	background-image: url(data:image/gif;base64,R0lGODlhEgASAJECAJeXl7Gvrf///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTAyMTU1RTNDMDZEMTFFMUJGNzZCRThBRkFCRjg4MTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTAyMTU1RTRDMDZEMTFFMUJGNzZCRThBRkFCRjg4MTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1MDIxNTVFMUMwNkQxMUUxQkY3NkJFOEFGQUJGODgxMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1MDIxNTVFMkMwNkQxMUUxQkY3NkJFOEFGQUJGODgxMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAIALAAAAAASABIAAAIwlI+pywcPm3mhWgkCsjBOvVkimElG9ZlCuYIY6TYs+6bmHDO4igfdD3GNhheV0VQAADs=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RkZDMUZDMkI2ODc3MTFFNkI5QTdFOTQyM0UxNUEzRjEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RkZDMUZDMkM2ODc3MTFFNkI5QTdFOTQyM0UxNUEzRjEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpGRkMxRkMyOTY4NzcxMUU2QjlBN0U5NDIzRTE1QTNGMSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpGRkMxRkMyQTY4NzcxMUU2QjlBN0U5NDIzRTE1QTNGMSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvnU3ycAAAB9SURBVHjaYty4fi0DNQATA5UAskGeQPwMiP9jwfWkGDQXiCVxqGsgZBiyQTBDGNFwI5Jh2FwL8oUnMWHUgGQYNgBywFxiA7sBi0thGGwYTWJt1KChaNBzKP2fRAwCL5ANSgEJkOGYp0CczIIksA1PpiUIGP///0+VMAIIMAC11ShRpw6rxAAAAABJRU5ErkJggg==);
 }
 .gantt_tree_icon.gantt_file {
-	background-image: url(data:image/gif;base64,R0lGODlhEgASAJECAJeXl7Gvrf///wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NzkxQzI4RjZDMDZEMTFFMTgwRjhBQURDQzI3NDU3QUEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NzkxQzI4RjdDMDZEMTFFMTgwRjhBQURDQzI3NDU3QUEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3OTFDMjhGNEMwNkQxMUUxODBGOEFBRENDMjc0NTdBQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3OTFDMjhGNUMwNkQxMUUxODBGOEFBRENDMjc0NTdBQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAEAAAIALAAAAAASABIAAAIylI+pwN16QJiUQiFThRlJm3RRFYSlR5qXMKmXaMDuuMoyOi8n/e6xn8NMHETgh5RaKQsAOw==);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDQwMTVBMUU2ODc4MTFFNkFBNDVCQkYzMzdERTM1MzYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDQwMTVBMUY2ODc4MTFFNkFBNDVCQkYzMzdERTM1MzYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowNDAxNUExQzY4NzgxMUU2QUE0NUJCRjMzN0RFMzUzNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowNDAxNUExRDY4NzgxMUU2QUE0NUJCRjMzN0RFMzUzNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsHnBgAAAAB8SURBVHjaYvz//z/Dpg3rGCgBfgFBDExoYp5A/AyI/+PB9dgMQzdoLhBLEnBAAzbDWND4MEMYsRjwH80wEGjE5SJSAIrLmBgoAw3UMghnGOEDjHjCjHouGjVoOBj0HCmNEMIg8AKXQSnIkgTAUyBOxpWytxFRjGAFAAEGAOcUI0XiA1ItAAAAAElFTkSuQmCC);
 }
 .gantt_grid_head_cell .gantt_sort {
 	position: absolute;
@@ -482,7 +533,7 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 .gantt-info {
 	min-width: 120px;
 	padding: 4px 4px 4px 20px;
-	font-family: "Arial";
+	font-family: "arial";
 	z-index: 10000;
 	margin: 5px;
 	margin-bottom: 10px;
@@ -506,11 +557,15 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 	text-align: center;
 	position: fixed;
 	z-index: 20000;
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
-	font-family: "Arial";
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	-moz-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	box-shadow: inset 0px 0px 0px 4px #0505ff;
+	padding: 4px;
+	font-family: "arial";
 	border-radius: 6px;
-	border: 1px solid #cecece;
-	background: #ffffff;
+	border: 1px solid #ffff00;
+	background: #000000;
 }
 .gantt_popup_title {
 	border-top-left-radius: 6px;
@@ -519,14 +574,13 @@ This software is covered by GPL license. You also can obtain Commercial or Enter
 }
 .gantt_button,
 .gantt_popup_button {
-	border: 1px solid #cecece;
+	border: 1px solid #ffff00;
 	height: 30px;
 	line-height: 30px;
 	display: inline-block;
 	margin: 0 5px;
 	border-radius: 4px;
-	background: #ffffff;
-	background: #fff;
+	background: #000000;
 }
 .gantt-info,
 .gantt_popup_button,
@@ -573,7 +627,7 @@ div.dhx_modal_cover {
 .gantt_button input,
 .gantt_popup_button div {
 	border-radius: 4px;
-	font-size: 14px;
+	font-size: 16px;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 	padding: 0px;
@@ -581,21 +635,21 @@ div.dhx_modal_cover {
 	vertical-align: top;
 }
 .gantt_popup_title {
-	border-bottom: 1px solid #cecece;
+	border-bottom: 1px solid #c1c1c1;
 	height: 40px;
 	line-height: 40px;
 	font-size: 20px;
 }
 .gantt_popup_text {
 	margin: 15px 15px 5px 15px;
-	font-size: 14px;
-	color: #000000;
+	font-size: 16px;
+	color: #ffffff;
 	min-height: 30px;
 	border-radius: 6px;
 }
 .gantt-info,
 .gantt-error {
-	font-size: 14px;
+	font-size: 16px;
 	color: #000;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
 	padding: 0px;
@@ -607,16 +661,16 @@ div.dhx_modal_cover {
 	padding: 5px 10px 5px 10px;
 	background-color: #fff;
 	border-radius: 3px;
-	border: 1px solid #cecece;
+	border: 1px solid #ffff00;
 }
 .gantt-error {
-	background-color: #d81b1b;
-	border: 1px solid #ff3c3c;
+	background-color: #b60000;
+	border: 1px solid #ffff00;
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
 }
 .gantt-error div {
-	background-color: #d81b1b;
-	border: 1px solid #940000;
+	background-color: #b60000;
+	border: 1px solid transparent;
 	color: #FFF;
 }
 .gantt_grid div,
@@ -645,7 +699,7 @@ div.dhx_modal_cover {
 	height: 100%;
 }
 .gantt_task_content {
-	font-size: 12px;
+	font-size: 14px;
 	color: #ffffff;
 	width: 100%;
 	top: 0;
@@ -656,7 +710,7 @@ div.dhx_modal_cover {
 .gantt_task_progress {
 	text-align: center;
 	z-index: 0;
-	background: #299cb4;
+	background: #0e2d7d;
 }
 .gantt_task_line {
 	-webkit-border-radius: 2px;
@@ -665,8 +719,8 @@ div.dhx_modal_cover {
 	position: absolute;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	background-color: #3db9d3;
-	border: 1px solid #2898b0;
+	background-color: #0042e9;
+	border: 1px solid #0042e9;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-moz-user-select: -moz-none;
@@ -699,9 +753,10 @@ div.dhx_modal_cover {
 .gantt_side_content {
 	position: absolute;
 	white-space: nowrap;
-	color: #6e6e6e;
+	color: #ffffff;
 	bottom: 7px;
 	font-size: 11px;
+	font-size: 13px;
 }
 .gantt_side_content.gantt_left {
 	right: 100%;
@@ -720,10 +775,10 @@ div.dhx_modal_cover {
 	cursor: pointer;
 }
 .gantt_line_wrapper div {
-	background-color: #ffa011;
+	background-color: #18ffff;
 }
 .gantt_task_link:hover .gantt_line_wrapper div {
-	box-shadow: 0 0 5px 0px #ffa011;
+	box-shadow: 0 0 5px 0px #18ffff;
 }
 .gantt_task_link div.gantt_link_arrow {
 	background-color: transparent;
@@ -770,11 +825,11 @@ div.dhx_modal_cover {
 }
 .gantt_link_source,
 .gantt_link_target {
-	box-shadow: 0px 0px 3px #3db9d3;
+	box-shadow: 0px 0px 3px #0042e9;
 }
 .gantt_link_target.link_start_allow,
 .gantt_link_target.link_finish_allow {
-	box-shadow: 0px 0px 3px #ffbf5e;
+	box-shadow: 0px 0px 3px #65ffff;
 }
 .gantt_link_target.link_start_deny,
 .gantt_link_target.link_finish_deny {
@@ -782,8 +837,8 @@ div.dhx_modal_cover {
 }
 .link_start_allow .gantt_link_control.task_left div,
 .link_finish_allow .gantt_link_control.task_right div {
-	background-color: #ffbf5e;
-	border-color: #ffa011;
+	background-color: #65ffff;
+	border-color: #18ffff;
 }
 .link_start_deny .gantt_link_control.task_left div,
 .link_finish_deny .gantt_link_control.task_right div {
@@ -795,28 +850,28 @@ div.dhx_modal_cover {
 	border-top-color: transparent !important;
 	border-right-color: transparent !important;
 	border-bottom-color: transparent !important;
-	border-left-color: #ffa011;
+	border-left-color: #18ffff;
 	margin-top: -1px;
 }
 .gantt_link_arrow_left {
 	border-width: 4px 6px 4px 0;
 	margin-top: -1px;
 	border-top-color: transparent !important;
-	border-right-color: #ffa011;
+	border-right-color: #18ffff;
 	border-bottom-color: transparent !important;
 	border-left-color: transparent !important;
 }
 .gantt_link_arrow_up {
 	border-width: 0 4px 6px 4px;
-	border-color: transparent transparent #ffa011 transparent;
+	border-color: transparent transparent #18ffff transparent;
 	border-top-color: transparent !important;
 	border-right-color: transparent !important;
-	border-bottom-color: #ffa011;
+	border-bottom-color: #18ffff;
 	border-left-color: transparent !important;
 }
 .gantt_link_arrow_down {
 	border-width: 4px 6px 0 4px;
-	border-top-color: #ffa011;
+	border-top-color: #18ffff;
 	border-right-color: transparent !important;
 	border-bottom-color: transparent !important;
 	border-left-color: transparent !important;
@@ -852,7 +907,7 @@ div.dhx_modal_cover {
 	bottom: -4px;
 	margin-left: -4px;
 	background-position: bottom;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkY3Rjk0RUVDMkYzMTFFMkI1OThEQTA3ODU0OTkzMEEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkY3Rjk0RUZDMkYzMTFFMkI1OThEQTA3ODU0OTkzMEEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyRjdGOTRFQ0MyRjMxMUUyQjU5OERBMDc4NTQ5OTMwQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyRjdGOTRFREMyRjMxMUUyQjU5OERBMDc4NTQ5OTMwQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PobPBzIAAADkSURBVHjaYpk2bRoDDsAExL1QdjEQ/8OmiAWHZk4gXqymqhQM4ty6fU8OSMUA8XdiDBAB4k0a6iqWRga6EKcwMQXduHlnL5DpB8Rv0J2JDFSA+JiOtgZcMwiA2CAxkBxUDVYDLEAKgIpV9XQ0MZwFEgPJAZnHoWpRDAgC4n2W5saiQKfjClQGkBxQDciL+6B6wAbkA/EqJwdrTkUFOQZCAKQGpBbIXA3SCzJggo+XK7OEuBgDsQCkFqgHrBfsBT5eHgZSAUwP2IBfv36TbABMDygdtK1Zv6UESLORaAbIhG6AAAMAKN8wE24DXWcAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDQ2MjFDRjU2ODc4MTFFNjk2MEVEQjgxRDU3RThDRjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDQ2MjFDRjY2ODc4MTFFNjk2MEVEQjgxRDU3RThDRjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpENDYyMUNGMzY4NzgxMUU2OTYwRURCODFENTdFOENGNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpENDYyMUNGNDY4NzgxMUU2OTYwRURCODFENTdFOENGNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkyX4qoAAADrSURBVHjaYiz7z8yADXQx/mUCUr1QbjFQ3T9s6phwaOYEUqvkHBkLQBjIXg0VI2wAUKEIkNqrFc0YHLqDiQGEtWMYg0BiUDncBgAVqACpY5bVjJY+i5kYmNkYwNh7ERMDSAwkB1WDaQBQwoKJheGY+ywmVdsWoDAjkiogGyTmMZtJFajmOEgtigFAgSA2HoZ9wZuZRPVTGRlwAb0URgagGhGQWpAeqNkM+TySDL3BW5mYxQ1xa0YGL8//Z1jr8+/fl2cMRSAd/zMeMjPwyTGQBD49YmCYIf8X4gVSNSPrYWKgEIC9QIkBAAEGAKWdQQSo7CbHAAAAAElFTkSuQmCC);
 	background-repeat: no-repeat;
 	z-index: 2;
 }
@@ -869,7 +924,7 @@ div.dhx_modal_cover {
 }
 .gantt_link_direction {
 	height: 0px;
-	border: 0px none #ffa011;
+	border: 0px none #18ffff;
 	border-bottom-style: dashed;
 	border-bottom-width: 2px;
 	transform-origin: 0% 0%;
@@ -881,24 +936,24 @@ div.dhx_modal_cover {
 }
 .gantt_grid_data .gantt_row.gantt_selected,
 .gantt_grid_data .gantt_row.odd.gantt_selected {
-	background-color: #fff3a1;
+	background-color: #42425e;
 }
 .gantt_task_row.gantt_selected {
-	background-color: #fff3a1;
+	background-color: #42425e;
 }
 .gantt_task_row.gantt_selected .gantt_task_cell {
-	border-right-color: #ffec6e;
+	border-right-color: #2d2d40;
 }
 .gantt_task_line.gantt_selected {
-	box-shadow: 0 0 5px #299cb4;
+	box-shadow: 0 0 5px #0e2d7d;
 }
 .gantt_task_line.gantt_project.gantt_selected {
-	box-shadow: 0 0 5px #46ad51;
+	box-shadow: 0 0 5px #006803;
 }
 .gantt_task_line.gantt_milestone {
 	visibility: hidden;
-	background-color: #d33daf;
-	border: 0px solid #61164f;
+	background-color: #c06fce;
+	border: 0px solid #ef8eff;
 	box-sizing: content-box;
 	-moz-box-sizing: content-box;
 }
@@ -965,26 +1020,29 @@ div.dhx_modal_cover {
 }
 .gantt_cal_light {
 	-webkit-tap-highlight-color: transparent;
-	background: #fff;
+	background: #000000;
 	border-radius: 6px;
-	font-family: "Arial";
-	font-size: 13px;
-	border: 1px solid #cecece;
-	color: #6b6b6b;
-	font-size: 12px;
+	font-family: "arial";
+	border: 1px solid #c1c1c1;
+	color: #ffffff;
+	font-size: 14px;
 	position: absolute;
 	z-index: 10001;
 	width: 550px;
 	height: 250px;
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	-moz-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	box-shadow: inset 0px 0px 0px 4px #0505ff;
+	padding: 4px;
 }
 .gantt_cal_light_wide {
 	width: 650px;
 }
 .gantt_cal_light select {
-	font-family: "Arial";
-	border: 1px solid #cecece;
-	font-size: 13px;
+	font-family: "arial";
+	border: 1px solid #c1c1c1;
+	font-size: 14px;
 	padding: 2px;
 	margin: 0px;
 }
@@ -1031,12 +1089,12 @@ div.dhx_modal_cover {
 }
 .gantt_cal_ltext textarea {
 	overflow: auto;
-	font-family: "Arial";
-	font-size: 13px;
+	font-family: "arial";
+	font-size: 14px;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid #cecece;
+	border: 1px solid #c1c1c1;
 	height: 100%;
 	width: 100%;
 	outline: none !important;
@@ -1049,10 +1107,10 @@ div.dhx_modal_cover {
 	padding-left: 10px;
 }
 .gantt_cal_larea {
-	border: 1px solid #cecece;
+	border: 1px solid #c1c1c1;
 	border-left: none;
 	border-right: none;
-	background-color: #ffffff;
+	background-color: #000000;
 	overflow: hidden;
 	height: 1px;
 }
@@ -1063,13 +1121,12 @@ div.dhx_modal_cover {
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	border-width: 0;
-	border-color: #cecece;
+	border-width: 2px;
+	border-color: #c1c1c1;
 	border-style: solid;
 	height: 32px;
 	font-weight: bold;
-	background: #ffffff;
-	background: #fff;
+	background: #000000;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -1078,23 +1135,23 @@ div.dhx_modal_cover {
 .gantt_btn_set div {
 	float: left;
 	font-size: 13px;
-	height: 22px;
-	line-height: 22px;
+	height: 18px;
+	line-height: 18px;
 	background-repeat: no-repeat;
 	vertical-align: middle;
 }
 .gantt_save_btn {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTk1OUU5RDFDMzA0MTFFMkExMUZBQTdDNDAzOUE5RjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTk1OUU5RDJDMzA0MTFFMkExMUZBQTdDNDAzOUE5RjMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxOTU5RTlDRkMzMDQxMUUyQTExRkFBN0M0MDM5QTlGMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxOTU5RTlEMEMzMDQxMUUyQTExRkFBN0M0MDM5QTlGMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PjDroXYAAAEXSURBVHjaYvz//z8DJYCRUgPIAUxAbAnEHiAHMIBcQCwGaRYXF3e6evXqoffv39/dv38/CymaGSUkJBzv3LlzCsj///fv3wdAihkkIQnEvkAshU8zLy+v7a1bt06ANP/79+87kDIAy505cybq06dPr3p7ezuwGQLTfOPGjWP/ESAZLg8kPKBO+g01RBJNszWyZqC6uSgWgIg/f/4shxnS2dnZBjMEqNkSFGBImi8CKTYMA4BYCGjIczRDHC5dunQQSfN7IKWI4UUkjjdMMdCwnw8ePLjwHxV4Yw1gZA5Q47z/2EELzhhCE+ABGvIQWSeQvwcU38QaAML2wHj+C/X3MyAlijeB4ZBoBOIPQGxJKIVSnBsBAgwABddBclWfcZUAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MEEyMTFDOUM2ODc5MTFFNjlDOTRDREYyNUQ4NENENTEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MEEyMTFDOUQ2ODc5MTFFNjlDOTRDREYyNUQ4NENENTEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowQTIxMUM5QTY4NzkxMUU2OUM5NENERjI1RDg0Q0Q1MSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowQTIxMUM5QjY4NzkxMUU2OUM5NENERjI1RDg0Q0Q1MSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhVZXooAAAD2SURBVHjaxNO/a8JAFMBxUx1KQXAQcWj9sdhBCDg52I6FgjgIIi7duunsIl0dxNmxW3EUHaS0tFj1DxJRKiX1/AZeIYTGNMnQg8927727e++0tgqHgqyTUMDlN8E55tAjPoIzeEcWPa8nyEllM3iJupcEeXzgAm+4xdpMoGOB9JHgAmZIYooKtj+P2MWVHO3yl+Ci3DmOEar4tHahIRtSkqRgCb7GK2IYmnfGl72NG5QxRkKSlXCDZ0TxiDsYTnOwQw1PUu0FE5xhgHt8uw2SIVUGEniKPlpQTq9rHyRzYxMr7PHg1lunSez8dTg0pdT//saDAAMAj/Mt6qJaGUkAAAAASUVORK5CYII=);
 	margin-top: 2px;
 	width: 21px;
 }
 .gantt_cancel_btn {
 	margin-top: 2px;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDkzMDA3MzlDMzA0MTFFMjg2QTVFMzFEQzgwRkJERDYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDkzMDA3M0FDMzA0MTFFMjg2QTVFMzFEQzgwRkJERDYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowOTMwMDczN0MzMDQxMUUyODZBNUUzMURDODBGQkRENiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowOTMwMDczOEMzMDQxMUUyODZBNUUzMURDODBGQkRENiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmYuYOUAAAEdSURBVHjaYvz//z8DJYAFXWDlypU8QKoIiD2A2AwqfAqIdwBxX3h4+Bdk9YzILgBqtgdS84FYEYeF94E4EWjIQZgAE5LmQCB1AKoZZKMPEAtAMYh9GSp3AKjWD8UFQAEhIPshEIOc3wHENUBb/qJ57SyQMoJyPwKxElDNO1gYFEE17wMKVmIJlzNQzeegrjaA6qmBecEbSvfh0GwMxGeBhoPoemQ9MAO0kEIbl2YTqPAFKK2IbMB3AjabYIkRZmQD7kNpMyI0G0PpO8gGbIUFJj7NQDk2INWIrIcJKfBAKcwJqvkcDs0TgFgXGo19KCkRmpDWQdWDEk0NUoCBoq0FqhkE/IEWbKJKUmZEz43QzFSKIzN1481M5ACAAAMAlfl/lCwRpagAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MERGODM2RkI2ODc5MTFFNkFCOTRCOTNEMkMwODJCQkUiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MERGODM2RkM2ODc5MTFFNkFCOTRCOTNEMkMwODJCQkUiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowREY4MzZGOTY4NzkxMUU2QUI5NEI5M0QyQzA4MkJCRSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowREY4MzZGQTY4NzkxMUU2QUI5NEI5M0QyQzA4MkJCRSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ppyd3J4AAAFPSURBVHjajJO5SkNRFEVfnlEbU9qrjVMwYiMBEbSK4g8IllFQK/EvLCwEEYdS/AOHIiJYWinEqREtbLQKCGpQcW3YgUuI8R1YvOTdvU9uzpCqVCpRXQxAEaag2+8e4AT24CYUp4IEbbAOixBHjePHSVbhLQqEMh/CMnzBBuQhY/J+p7MFOIaO8AabsATPMAOXDX69E86hz9+35FGCQT5cwTeMNjGfgbT30AVpyMUuWAtsJzBfwzjs2FNUgoKFBwnMk/ASaAv6C58uYjtUE5gjaz+kT//RrnrzBLwG561+VmMPiWIkoVmR9fMp9oQpZhOaa1pFSTXIuvoakkfo/cc8BBdu47BuUIZdF0bmuybmHBxZq7aXa5OY8cGYO6Ep24dbG/thznuijp3CtLThMinJmme92TLptivwXr+NtVAB5z1gPb6RalPyJpZD8a8AAwBoDGzHPr0K4wAAAABJRU5ErkJggg==);
 	width: 20px;
 }
 .gantt_delete_btn {
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjFENzI3NUNDMzA0MTFFMjhBNjJGQTc3MUIyQzYzNEYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjFENzI3NURDMzA0MTFFMjhBNjJGQTc3MUIyQzYzNEYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMUQ3Mjc1QUMzMDQxMUUyOEE2MkZBNzcxQjJDNjM0RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMUQ3Mjc1QkMzMDQxMUUyOEE2MkZBNzcxQjJDNjM0RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmUD0gAAAABvSURBVHjaYvz//z8DIyMjAxYQicReji4J0ofKQNP8HwmgGQbXB8IsWGwDSSwDuioKjY9uBthVjFAXYHUGAQA2kYmBUoAUBpGk0LAwgBvwH+YX4mkwptgLowYMRgOITUyYKRFIN/wnDjQgJySAAAMApryKzL8wjfUAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTZBMjlFNkU2ODc5MTFFNjkxOTRGRTZGMDkwMENCMUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTZBMjlFNkY2ODc5MTFFNjkxOTRGRTZGMDkwMENCMUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNkEyOUU2QzY4NzkxMUU2OTE5NEZFNkYwOTAwQ0IxQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNkEyOUU2RDY4NzkxMUU2OTE5NEZFNkYwOTAwQ0IxQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpeemjIAAABMSURBVHjaYvx/hAEbqAfiBjQxEL8RXSETkZphBtSjCzJCXfCfgTzAyMRAIWCBmUSpATBArFcY8QUiSWDUgFEDsBlwhAg9R5E5AAEGAFNACzFr4MENAAAAAElFTkSuQmCC);
 	margin-top: 2px;
 	width: 20px;
 }
@@ -1111,8 +1168,8 @@ div.dhx_modal_cover {
 }
 .gantt_custom_button {
 	padding: 0px 3px 0px 3px;
-	font-family: "Arial";
-	font-size: 13px;
+	font-family: "arial";
+	font-size: 14px;
 	font-weight: normal;
 	margin-right: 10px;
 	margin-top: -5px;
@@ -1146,7 +1203,7 @@ div.dhx_modal_cover {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	border: 1px solid #cecece;
+	border: 1px solid #c1c1c1;
 }
 .gantt_cal_light_wide .gantt_cal_lsection {
 	border: 0px;
@@ -1160,7 +1217,7 @@ div.dhx_modal_cover {
 	position: relative;
 	padding: 10px 0;
 	overflow: hidden;
-	border-bottom: 1px solid #ebebeb;
+	border-bottom: 1px solid #7e7e7e;
 }
 .gantt_cal_light_wide .gantt_section_time {
 	overflow: hidden;
@@ -1204,7 +1261,7 @@ div.dhx_modal_cover {
 	margin-left: 14px;
 }
 .gantt_cal_light input {
-	font-size: 13px;
+	font-size: 14px;
 }
 .gantt_section_time {
 	background-color: white;
@@ -1219,7 +1276,7 @@ div.dhx_modal_cover {
 .gantt_section_time .gantt_time_selects select {
 	height: 23px;
 	padding: 2px;
-	border: 1px solid #cecece;
+	border: 1px solid #c1c1c1;
 }
 .gantt_duration {
 	width: 100px;
@@ -1238,7 +1295,7 @@ div.dhx_modal_cover {
 	text-align: center;
 	vertical-align: top;
 	height: 100%;
-	border: 1px solid #cecece;
+	border: 1px solid #c1c1c1;
 }
 .gantt_duration .gantt_duration_value {
 	width: 40px;
@@ -1251,8 +1308,7 @@ div.dhx_modal_cover {
 	width: 20px;
 	padding: 1px;
 	padding-bottom: 1px;
-	background: #ffffff;
-	background: #fff;
+	background: #000000;
 }
 .gantt_duration .gantt_duration_dec {
 	-moz-border-top-left-radius: 4px;
@@ -1273,12 +1329,16 @@ div.dhx_modal_cover {
 }
 /* Quick info */
 .gantt_cal_quick_info {
-	border: 1px solid #cecece;
+	border: 1px solid #ffff00;
 	border-radius: 6px;
 	position: absolute;
 	z-index: 300;
-	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.07);
-	background-color: #ffffff;
+	border-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	-moz-box-shadow: inset 0px 0px 0px 4px #0505ff;
+	box-shadow: inset 0px 0px 0px 4px #0505ff;
+	padding: 4px;
+	background-color: #000000;
 	width: 300px;
 	transition: left 0.5s ease, right 0.5s;
 	-moz-transition: left 0.5s ease, right 0.5s;
@@ -1308,21 +1368,21 @@ div.dhx_modal_cover {
 	border-top-right-radius: 6px;
 	border-bottom-right-radius: 0;
 	padding: 5px 0px 8px 12px;
-	color: #454545;
-	background-color: #fff;
-	border-bottom: 1px solid #cecece;
+	color: #ffffff;
+	background-color: #000000;
+	border-bottom: 1px solid #ffff00;
 }
 .gantt_cal_qi_tdate {
 	font-size: 14px;
 	font-weight: bold;
 }
 .gantt_cal_qi_tcontent {
-	font-size: 13px;
+	font-size: 14px;
 }
 .gantt_cal_qi_content {
 	padding: 16px 8px;
-	font-size: 13px;
-	color: #454545;
+	font-size: 14px;
+	color: #ffffff;
 	overflow: hidden;
 }
 .gantt_cal_qi_controls {
@@ -1350,21 +1410,20 @@ div.dhx_modal_cover {
 }
 .gantt_cal_qi_controls .gantt_menu_icon.icon_delete {
 	width: 20px;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjFENzI3NUNDMzA0MTFFMjhBNjJGQTc3MUIyQzYzNEYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjFENzI3NURDMzA0MTFFMjhBNjJGQTc3MUIyQzYzNEYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyMUQ3Mjc1QUMzMDQxMUUyOEE2MkZBNzcxQjJDNjM0RiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyMUQ3Mjc1QkMzMDQxMUUyOEE2MkZBNzcxQjJDNjM0RiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PmUD0gAAAABvSURBVHjaYvz//z8DIyMjAxYQicReji4J0ofKQNP8HwmgGQbXB8IsWGwDSSwDuioKjY9uBthVjFAXYHUGAQA2kYmBUoAUBpGk0LAwgBvwH+YX4mkwptgLowYMRgOITUyYKRFIN/wnDjQgJySAAAMApryKzL8wjfUAAAAASUVORK5CYII=);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyhpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTMyIDc5LjE1OTI4NCwgMjAxNi8wNC8xOS0xMzoxMzo0MCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MTZBMjlFNkU2ODc5MTFFNjkxOTRGRTZGMDkwMENCMUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MTZBMjlFNkY2ODc5MTFFNjkxOTRGRTZGMDkwMENCMUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxNkEyOUU2QzY4NzkxMUU2OTE5NEZFNkYwOTAwQ0IxQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxNkEyOUU2RDY4NzkxMUU2OTE5NEZFNkYwOTAwQ0IxQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PpeemjIAAABMSURBVHjaYvx/hAEbqAfiBjQxEL8RXSETkZphBtSjCzJCXfCfgTzAyMRAIWCBmUSpATBArFcY8QUiSWDUgFEDsBlwhAg9R5E5AAEGAFNACzFr4MENAAAAAElFTkSuQmCC);
 }
 .gantt_qi_big_icon {
 	font-size: 13px;
 	border-radius: 4px;
 	font-weight: bold;
-	background: #ffffff;
-	background: #fff;
+	background: #000000;
 	margin: 5px 9px 8px 0px;
 	min-width: 60px;
 	line-height: 32px;
 	vertical-align: middle;
 	padding: 0px 10px 0px 5px;
 	cursor: pointer;
-	border: 1px solid #cecece;
+	border: 1px solid #ffff00;
 }
 .gantt_cal_qi_controls div {
 	float: left;
@@ -1412,8 +1471,8 @@ div.dhx_modal_cover {
 	position: absolute;
 	top: -1000px;
 	left: -1000px;
-	font-family: "Arial";
-	font-size: 13px;
+	font-family: "arial";
+	font-size: 14px;
 }
 .gantt_drag_marker .gantt_tree_indent,
 .gantt_drag_marker .gantt_tree_icon.gantt_blank,
@@ -1423,14 +1482,14 @@ div.dhx_modal_cover {
 }
 .gantt_drag_marker,
 .gantt_drag_marker .gantt_row.odd {
-	background-color: #ffffff;
+	background-color: #000000;
 }
 .gantt_drag_marker .gantt_row {
-	border-left: 1px solid #d2d2d2;
-	border-top: 1px solid #d2d2d2;
+	border-left: 1px solid #656565;
+	border-top: 1px solid #656565;
 }
 .gantt_drag_marker .gantt_cell {
-	border-color: #d2d2d2;
+	border-color: #656565;
 }
 .gantt_row.gantt_over,
 .gantt_task_row.gantt_over {
@@ -1440,12 +1499,13 @@ div.dhx_modal_cover {
 	opacity: 0.7;
 }
 .gantt_task_row.gantt_transparent {
-	background-color: #f8fdfd;
+	background-color: #d0ddff;
 }
 .gantt_popup_button.gantt_delete_button {
-	background: #3db9d3;
-	text-shadow: 0 -1px 0 #248a9f;
-	color: #fff;
 	font-weight: bold;
-	border-width: 0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #76ff03;
+	background: #000000;
+	color: #76ff03;
 }
